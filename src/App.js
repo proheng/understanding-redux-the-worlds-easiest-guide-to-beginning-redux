@@ -9,7 +9,16 @@ class App extends Component {
   render() {
     return [
       <HelloWorld key={1} tech={store.getState().tech} />,
-      <ButtonGroup key={2} technologies={["React", "Elm", "React-redux"]} />
+      <ButtonGroup key={2} technologies={["React", "Elm", "React-redux"]} />,
+      <p>
+        This is the sandbox code from{" "}
+        <a
+          target="_blank"
+          href="https://medium.freecodecamp.org/understanding-redux-the-worlds-easiest-guide-to-beginning-redux-c695f45546f6"
+        >
+          <i>Understanding redux the worlds easiest guide to beginning redux</i>
+        </a>
+      </p>
     ];
   }
 }
